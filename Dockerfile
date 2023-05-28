@@ -4,7 +4,8 @@ WORKDIR /app
 
 COPY requirements.txt /app
 
-RUN pip install -r requirements.txt
+RUN --mount=type=cache,target=/root/.cache/pip \
+    pip install -r requirements.txt
 
 COPY . /app
 
