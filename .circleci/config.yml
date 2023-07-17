@@ -21,8 +21,8 @@ workflows:
     jobs:
       - pull-and-test
       - azure-acr/build-and-push-image:
-          login-server-name: flaskdockerflaskdemo.azurecr.io
-          registry-name: flaskdockerflaskdemo
+          login-server-name: flaskdockerdemo.azurecr.io
+          registry-name: flaskdockerdemo
           repo: flask-rates-api
           tag: latest
           requires:
