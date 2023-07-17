@@ -6,7 +6,7 @@ orbs:
 
 jobs:
   pull-and-test:
-    description: "Setup Django application and run tests"
+    description: "Setup Django application and run tests."
     executor: python/default
     steps:
       - checkout
